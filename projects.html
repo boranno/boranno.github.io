@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">&lt;YourName/&gt;</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="certifications.html" class="nav-link">Certifications</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Projects Header Section -->
+        <section class="section projects-header-section visible">
+            <div class="section-content">
+                <div class="section-header">
+                    <h1 class="page-title">My Projects</h1>
+                    <p class="page-description">
+                        A collection of projects showcasing my technical skills, creativity, 
+                        and problem-solving abilities across various domains.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="section filter-section">
+            <div class="section-content">
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="ai">AI/ML</button>
+                    <button class="filter-btn" data-filter="game">Games</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section class="section projects-grid-section">
+            <div class="section-content">
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Web Development Projects -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-placeholder">🌐</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <p class="project-description">
+                                Full-stack e-commerce solution with user authentication, payment integration, 
+                                and admin dashboard. Built with React, Node.js, and MongoDB.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-placeholder">📊</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Analytics Dashboard</h3>
+                            <p class="project-description">
+                                Interactive data visualization dashboard with real-time updates, 
+                                charts, and reporting features for business intelligence.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <div class="project-placeholder">📱</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Play Store</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">
+                                Cross-platform mobile app for task management with offline sync, 
+                                notifications, and collaborative features.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Dart</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="ai">
+                        <div class="project-image">
+                            <div class="project-placeholder">🤖</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Image Classification System</h3>
+                            <p class="project-description">
+                                Deep learning model for image classification with 95% accuracy. 
+                                Includes web interface for real-time predictions.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">OpenCV</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="ai">
+                        <div class="project-image">
+                            <div class="project-placeholder">💬</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Try It</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Chatbot Assistant</h3>
+                            <p class="project-description">
+                                AI-powered chatbot with natural language processing capabilities 
+                                for customer support and FAQ automation.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">NLTK</span>
+                                <span class="tech-tag">Dialogflow</span>
+                                <span class="tech-tag">REST API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="game">
+                        <div class="project-image">
+                            <div class="project-placeholder">🎮</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Play Game</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">2D Platformer Game</h3>
+                            <p class="project-description">
+                                Retro-style 2D platformer game with physics engine, multiple levels, 
+                                power-ups, and smooth animations.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Unity</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">Photoshop</span>
+                                <span class="tech-tag">Audacity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-placeholder">🏥</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Hospital Management System</h3>
+                            <p class="project-description">
+                                Comprehensive hospital management system with patient records, 
+                                appointment scheduling, and billing management.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <div class="project-placeholder">🌤️</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Download</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Weather Forecast App</h3>
+                            <p class="project-description">
+                                Beautiful weather app with location-based forecasts, weather maps, 
+                                and severe weather alerts.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Weather API</span>
+                                <span class="tech-tag">Maps SDK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
